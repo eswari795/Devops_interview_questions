@@ -34,8 +34,33 @@ Unix and Shell scripting
 ---------------------------------------------------------------------------------------------------------------------
 10. write a script which accepts file or folder, if its folder delete it else print "this is a file"?
 11. How to check whether particular port is already in use or not?
+
+ANS: netstat -tunlp
+
+===================================================
+
 12. Logic for checking whether supplied string for a script is palindrome or not? what are all the commands you will use?
-13. command to get number of lines in a file?
+
+ANS: 
+
+#!/bin/bash
+
+read input
+
+palindrome=$(echo $input | rev )
+
+if [ $palindrome = $input ]
+then
+        echo " $input is a palindrome"
+fi
+
+=================================================
+
+14. command to get number of lines in a file?
+
+ANS: wc -l <<filename>>
+  
+  =============================================
 
 Ansible
 -----------------------------------------------------------------------------------------------------------------------
@@ -47,8 +72,24 @@ Ansible
 Docker
 ------------------------------------------------------------------------------------------------------------------------------
 18. Have you worked on multi-stage dockerfile and why we need that?
+  
+  ANS: for reducing the image size we use multistage concept/
+  
+  ==============================================================
+  
 19. Lets say i have container which is attached with a volume, if container crashes what happens to volume?
+  
+  ANS: it will be there, we have to manually delete. 
+  docker volume prune
+  
+  ==============================================================
 20. can you copy a file form local to run container?
+  
+  ANS: yes
+  using docker cp
+  docker cp filename containerID:path
+  
+  =======================================================
 
 
 Kubernetes
