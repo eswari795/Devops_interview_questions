@@ -4,9 +4,17 @@
 GIT
 ---------------------------------------------------------------------------------------------------------------------------------
 1. Why we need git? What makes git unique from other tools like SVN?
+Ans: To save all the code and for collaboration, we use Git. Git is unique as it is no a Centralised Version control system. 
+
 2. Let's say i have maven repo cloned on to my local, did some changes and i have build the code now target folder will be generated. So now when i do git operations like git add, git commit or any other git operations target folder should not be considered, how would you achieve the same?
+Ans: we can use gitignore. we can add target folder name in gitignore file and commit.
+
+
 3. difference between git pull and git fetch?
+Ans: git pull= git fetch+git merge
+     git fetch = fetches the code from remote repo 
 4. How to clone specific branch in git?
+Ans: git clone --single-branch <<branch-name>> url
 
 Maven
 --------------------------------------------------------------------------------------------------------------------------
