@@ -14,7 +14,7 @@ Ans: we can use gitignore. we can add target folder name in gitignore file and c
 Ans: git pull= git fetch+git merge
      git fetch = fetches the code from remote repo 
 4. How to clone specific branch in git?
-Ans: git clone --single-branch <<branch-name>> url
+Ans: git clone -b <<branch-name>> --single-branch url
 
 Maven
 --------------------------------------------------------------------------------------------------------------------------
